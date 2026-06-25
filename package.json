@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "name": "bare-addon-exercise",
+  "version": "1.0.0",
+  "description": "TCP client native addon exercise for Bare",
+  "exports": {
+    "./package": "./package.json",
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "binding.c",
+    "binding.js",
+    "CMakeLists.txt",
+    "docs",
+    "prebuilds"
+  ],
+  "addon": true,
+  "scripts": {
+    "format": "prettier --write .",
+    "test": "brittle-bare --coverage test.js"
+  },
+  "author": "Berk Tiryakiler",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/berktiryakiler/bare-addon-example/issues"
+  },
+  "homepage": "https://github.com/berktiryakiler/bare-addon-example#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berktiryakiler/bare-addon-example.git"
+  },
+  "devDependencies": {
+    "bare": "^1.29.5",
+    "bare-buffer": "^3.0.0",
+    "bare-make": "^1.0.0",
+    "brittle": "^3.4.0",
+    "cmake-bare": "^1.1.2",
+    "prettier": "^3.3.3",
+    "prettier-config-standard": "^7.0.0"
+  }
+}
